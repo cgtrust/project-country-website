@@ -18,10 +18,14 @@
     <div class="header">
         <img src="images/australia-logo.png" alt="Koala hanging off the right side of the black letter a in front of a yellow sun.">
         <h1>Australia</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="melbourne.html"></a>Melbourne</li>
-                <li><a href="sydney.html"></a>Sydney</li>
+        <nav class="nav" id="nav">
+            <button class="menu-toggle" id="menu-toggle">
+                <title>Menu</title>
+            </button>
+  
+            <ul class="group" id="header-menu">  
+                <li><a href="melbourne.html"></a>Melbourne</li>  
+                <li><a href="sydney.html"></a>Sydney</li> 
                 <li><a href="credit.html"></a>Credits</li>
             </ul>
         </nav>
@@ -30,40 +34,42 @@
 
 <!-- Main Content Area -->
 <main>
-
-    <article>
-        <h2>Topography</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iure sapiente autem quo unde, doloremque laboriosam vero eius perspiciatis odit sunt veritatis veniam ipsam harum explicabo ducimus, accusantium modi nulla. Molestias officiis culpa sunt, eaque ratione eveniet totam quos id dignissimos rem aspernatur aliquid at accusamus sequi magnam numquam a.</p>
-        <img src="images/australia.jpg" alt="Satellite image of the Australian continent">
-    </article>
-    <article>
-        <h2>Local Wildlife</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam beatae iure quos assumenda sed enim aut blanditiis tempore nostrum optio non ipsum earum dignissimos architecto omnis quasi labore pariatur corrupti laboriosam iste, reprehenderit ratione. Impedit adipisci beatae atque vero nulla saepe harum assumenda minus, dolores deserunt nostrum, quis tenetur?</p>
-        <img src="images/koala.jpg" alt="Koala hanging off a tree">
-        <img src="images/kangaroo.jpg" alt="Kangaroo family in a field">
-        <img src="images/sulphur-crested-cockatoos.jpg" alt="Two cockatoos sitting on a rock">
-    </article>
-
-    <form action="#" method="post" name="favorite animal">
-        <label for="input">Of the three, which animal is your favorite?</label>
-        <label for="koala">Koala</label>
-        <input type="radio" name="animal" id="koala">
-        <label for="kangaroo">Kangaroo</label>
-        <input type="radio" name="animal" id="kangaroo">
-        <label for="cockatoo">Cockatoo</label>
-        <input type="radio" name="animal" id="cockatoo">
-    </form>
-
-    <article>
-        <h2>Major Landmarks</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia culpa ratione, cum, dignissimos ipsum officiis magnam maiores amet molestiae, non consequuntur consequatur autem sapiente numquam! Fuga, soluta laudantium autem facilis nemo eaque dolores in voluptatem tenetur accusantium ipsa harum explicabo delectus consectetur enim nulla? Animi inventore rem alias facilis nulla.</p>
-        <img src="images/ayers-rock.jpg" alt="Ayers rock, a giant bright orange mountain all alone in the desert landscape">
-        <img src="images/twelve-apostles.jpg" alt="Twelve apostles landmark, sandstone structures naturally eroded by the ocean">
-        <img src="images/great-barrier-reef.jpg" alt="Great barrier reef coral">
-    </article>
-
-</main>
-
+    <div class="site-wrap">
+        
+        <article>
+            <h2>Topography</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iure sapiente autem quo unde, doloremque laboriosam vero eius perspiciatis odit sunt veritatis veniam ipsam harum explicabo ducimus, accusantium modi nulla. Molestias officiis culpa sunt, eaque ratione eveniet totam quos id dignissimos rem aspernatur aliquid at accusamus sequi magnam numquam a.</p>
+            <video src="media/coverr-green-grapevine-4041-1080p.mp4"></video>
+        </article>
+        <article>
+            <h2>Local Wildlife</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam beatae iure quos assumenda sed enim aut blanditiis tempore nostrum optio non ipsum earum dignissimos architecto omnis quasi labore pariatur corrupti laboriosam iste, reprehenderit ratione. Impedit adipisci beatae atque vero nulla saepe harum assumenda minus, dolores deserunt nostrum, quis tenetur?</p>
+            <img src="images/koala.png" alt="Koala hanging off a tree">
+            <img src="images/kangaroo.png" alt="Kangaroo family in a field">
+            <img src="images/cockatoos.png" alt="Two cockatoos sitting on a rock">
+        </article>
+        
+        <form action="#" method="post" name="favorite animal">
+            <label for="input">Of the three, which animal is your favorite?</label>
+            <label for="koala">Koala</label>
+            <input type="radio" name="animal" id="koala">
+            <label for="kangaroo">Kangaroo</label>
+            <input type="radio" name="animal" id="kangaroo">
+            <label for="cockatoo">Cockatoo</label>
+            <input type="radio" name="animal" id="cockatoo">
+        </form>
+        
+        <article>
+            <h2>Major Landmarks</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia culpa ratione, cum, dignissimos ipsum officiis magnam maiores amet molestiae, non consequuntur consequatur autem sapiente numquam! Fuga, soluta laudantium autem facilis nemo eaque dolores in voluptatem tenetur accusantium ipsa harum explicabo delectus consectetur enim nulla? Animi inventore rem alias facilis nulla.</p>
+            <img src="images/uluru.png" alt="Ayers rock, a giant bright orange mountain all alone in the desert landscape">
+            <img src="images/twelve-apostles.png" alt="Twelve apostles landmark, sandstone structures naturally eroded by the ocean">
+            <img src="images/great-barrier-reef.png" alt="Great barrier reef coral">
+        </article>
+        
+    </main>
+</div>
+    
 <!-- Footer -->
 <footer>
     <section class="footer">
@@ -84,6 +90,8 @@
         <p>&copy;2024</p>
     </section>
 </footer>
-    
+
+<script src="scripts/australia.js"></script>
+
 </body>
 </html>
