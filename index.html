@@ -15,14 +15,17 @@
 
 <!-- Header -->
 <header>
-    <img src="images/australia-logo.png" alt="Koala hanging off the right side of the black letter a in front of a yellow sun.">
-    <h1>Australia</h1>
-    <nav class="nav">
-        <ul>
-            <li><a href="melbourne.html"></a>Melbourne</li>
-            <li><a href="sydney.html"></a>Sydney</li>
-        </ul>
-    </nav>
+    <div class="header">
+        <img src="images/australia-logo.png" alt="Koala hanging off the right side of the black letter a in front of a yellow sun.">
+        <h1>Australia</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="melbourne.html"></a>Melbourne</li>
+                <li><a href="sydney.html"></a>Sydney</li>
+                <li><a href="credit.html"></a>Credits</li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <!-- Main Content Area -->
@@ -41,13 +44,15 @@
         <img src="images/sulphur-crested-cockatoos.jpg" alt="Two cockatoos sitting on a rock">
     </article>
 
-    <label for="input">Of the three, which animal is your favorite?</label>
-    <input type="radio" name="animal" id="koala">
-    <label for="koala">Koala</label>
-    <input type="radio" name="animal" id="kangaroo">
-    <label for="kangaroo">Kangaroo</label>
-    <input type="radio" name="animal" id="cockatoo">
-    <label for="cockatoo">Cockatoo</label>
+    <form action="#" method="post" name="favorite animal">
+        <label for="input">Of the three, which animal is your favorite?</label>
+        <label for="koala">Koala</label>
+        <input type="radio" name="animal" id="koala">
+        <label for="kangaroo">Kangaroo</label>
+        <input type="radio" name="animal" id="kangaroo">
+        <label for="cockatoo">Cockatoo</label>
+        <input type="radio" name="animal" id="cockatoo">
+    </form>
 
     <article>
         <h2>Major Landmarks</h2>
