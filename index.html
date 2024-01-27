@@ -23,7 +23,9 @@
 <!-- Header -->
 <header>
     <div class="header">
-        <img src="images/australia-logo.png" alt="Koala hanging off the right side of the black letter a in front of a yellow sun.">
+        <a href="index.html">
+            <img src="images/australia-logo.png" alt="Koala hanging off the right side of the black letter a in front of a yellow sun.">
+        </a>
         <h1>Australia</h1>
         <nav class="nav" id="nav">
             <button class="menu-toggle" id="menu-toggle">
@@ -32,9 +34,9 @@
             </button>
   
             <ul class="group" id="header-menu">  
-                <li><a href="melbourne.html"></a>Melbourne</li>  
-                <li><a href="sydney.html"></a>Sydney</li> 
-                <li><a href="credit.html"></a>Credits</li>
+                <li><a href="melbourne.html">Melbourne</a></li>  
+                <li><a href="sydney.html">Sydney</a></li> 
+                <li><a href="credit.html">Credits</a></li>
             </ul>
         </nav>
     </div>
@@ -44,39 +46,82 @@
 <main>
     <div class="site-wrap">
         
-        <article class="topography">
-            <h2>Topography</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iure sapiente autem quo unde, doloremque laboriosam vero eius perspiciatis odit sunt veritatis veniam ipsam harum explicabo ducimus, accusantium modi nulla. Molestias officiis culpa sunt, eaque ratione eveniet totam quos id dignissimos rem aspernatur aliquid at accusamus sequi magnam numquam a.</p>
-            <video src="media/coverr-green-grapevine-4041-1080p.mp4"></video>
+        <article>
+            <div class="article">
+                <h2>Topography</h2>
+                <p>Australia has a wide variety of climates, the largest part being desert. Only the south east and wouth west corners have a temperate climate, making these areas perfect for making fine wines. Australia is one of the worlds largest exporters of wine. Many vines in the area are over 150 years old.</p>
+            </div>
+                <video autoplay muted loop playsinline>
+                    <source src="media/coverr-green-grapevine-4041-1080p.mp4" alt="grapes on a vine">
+                    Your browser does not support the video element.
+                </video>
         </article>
-        <article class="wildlife">
-            <h2>Local Wildlife</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam beatae iure quos assumenda sed enim aut blanditiis tempore nostrum optio non ipsum earum dignissimos architecto omnis quasi labore pariatur corrupti laboriosam iste, reprehenderit ratione. Impedit adipisci beatae atque vero nulla saepe harum assumenda minus, dolores deserunt nostrum, quis tenetur?</p>
-            <img src="images/koala.png" alt="Koala hanging off a tree">
-            <img src="images/kangaroo.png" alt="Kangaroo family in a field">
-            <img src="images/cockatoos.png" alt="Two cockatoos sitting on a rock">
+        <article>
+            <div class="article">
+                <h2>Local Wildlife</h2>
+                <p>There are over 200,000 species that live in Australia, around half are native to the country. Here are three of my personal favorites. <blockquote>"My message is simple: love and conserve our wildlife."" <cite>Steve Irwin</cite></blockquote></p>
+            </div>
+            <div id="picture">
+                <figure>
+                    <img src="images/koala.png" alt="Koala hanging off a tree">
+                    <figcaption>
+                        Koalas spend 18-20 hours a day sleeping to preserve energy. This is so they can digest their fibrous diet, mainly gum leaves.
+                    </figcaption>
+                    <img src="images/kangaroo.png" alt="Kangaroo family in a field">
+                    <figcaption>
+                        There are over 30 million kangaroos in Australia covering 55 different species.
+                    </figcaption>
+                    <img src="images/platypus.png" alt="Platypus swimming in muddy water">
+                    <figcaption>
+                        This egg-laying mammal is native to south eastern Australia, mainly Tasmania. Main habitats include small rivers and streams.
+                    </figcaption>
+                </figure>
+            </div>
         </article>
         
         <form action="#" method="post" name="favorite animal">
             <label for="input">Of the three, which animal is your favorite?</label>
-            <label for="koala">Koala</label>
-            <input type="radio" name="animal" id="koala">
-            <label for="kangaroo">Kangaroo</label>
-            <input type="radio" name="animal" id="kangaroo">
-            <label for="cockatoo">Cockatoo</label>
-            <input type="radio" name="animal" id="cockatoo">
+            <div class="form">
+                <label for="koala">Koala</label>
+                <input type="radio" name="animal" id="koala">
+            </div>
+            <div class="form">
+                <label for="kangaroo">Kangaroo</label>
+                <input type="radio" name="animal" id="kangaroo">
+            </div>
+            <div class="form">
+                <label for="platypus">Playtypus</label>
+                <input type="radio" name="animal" id="platypus">
+            </div>
         </form>
         
         <article>
-            <h2>Major Landmarks</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia culpa ratione, cum, dignissimos ipsum officiis magnam maiores amet molestiae, non consequuntur consequatur autem sapiente numquam! Fuga, soluta laudantium autem facilis nemo eaque dolores in voluptatem tenetur accusantium ipsa harum explicabo delectus consectetur enim nulla? Animi inventore rem alias facilis nulla.</p>
-            <img src="images/uluru.png" alt="Ayers rock, a giant bright orange mountain all alone in the desert landscape">
-            <img src="images/twelve-apostles.png" alt="Twelve apostles landmark, sandstone structures naturally eroded by the ocean">
-            <img src="images/great-barrier-reef.png" alt="Great barrier reef coral">
+            <div class="article">
+                <h2>Major Landmarks</h2>
+                <p>Australia has many well known landmarks scattered throughout the country. Here you will see three of the most famous landmarks.</p>
+            </div>
+            <figure class="uluru">
+                <img src="images/uluru.png" alt="Ayers rock, a giant bright orange mountain all alone in the desert landscape">
+                <figcaption>
+                    Ayer's Rock is the world's largest monolith, and is located to the northeast of Alice Springs. it is known to the indiginous Aboriginal people as Uluru. Many caves at the base of the rock are sacred to several tribes and contain carvings and paintings.
+                </figcaption>
+            </figure>
+            <figure class="twelve">
+                <img src="images/twelve-apostles.png" alt="Twelve apostles landmark, sandstone structures naturally eroded by the ocean">
+                <figcaption>
+                    The Twelve Apostles is a major landmark along the Great Ocean Road, which stretches from Adelaide to Melbourne. The stunning visual is created by limestone rocks in close proximity to one another along the coast. These rock formations date back over 20 millions years. The strong erosion from the Southern Ocean created, and will eventually destroy these rock formations.
+                </figcaption>
+            </figure>
+            <figure class="reef">
+                <img src="images/great-barrier-reef.png" alt="Great barrier reef coral">
+                <figcaption>
+                    The Great Barrier Reef is the longest in the world, and extends 2,300km (1,429mi) off the east coast. The 3,000 individual reefs house over 9,000 different species.
+                </figcaption>
+            </figure>
         </article>
         
-    </main>
-</div>
+    </div>
+</main>
     
 <!-- Footer -->
 <footer>

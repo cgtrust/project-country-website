@@ -12,19 +12,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Navigation */
-a, a:visited {
+a {
     text-decoration: none;
+    padding: 1rem;
+}
+
+a, a:visited {
+    color: #004e2f;
 }
 
 a:hover, a:active, a:focus {
     text-decoration: underline;
 }
 
+a:focus {
+    outline: 1px dotted #ffff00;
+}
+
 nav li {
     list-style: none;
-    padding: 1rem;
-    color: #004e2f;
-    background-color: #ffff00;
+    border: 1px solid #004e2f;
 }
 
 /* Header */
@@ -43,6 +50,7 @@ header img {
     max-height: 4rem;
     padding: 1rem;
     padding-right: 0;
+    background-color: none;
 }
 
 .header {
@@ -53,8 +61,6 @@ header img {
 
 nav li {
     list-style: none;
-    padding: 1rem;
-    color: #004e2f;
     background-color: #ffff00;
     text-align: center;
 }
@@ -84,10 +90,35 @@ button {
 }
 
 @media(min-width: 40em) {
+    button {
+        display: none;
+    }
+
+    #header-menu {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding-top: 0;
+    }
+
+    .header {
+        display: flex;
+        margin: 0 auto;
+        vertical-align: center;
+    }
+
+    header a img {
+        padding: 0;
+    }
+
     .group {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         gap: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -97,15 +128,59 @@ button {
     margin: 0 auto;
 }
 
+h2 {
+    border-bottom: 1px solid #004e2f;
+}
+
 video, article img {
     max-width: 15.625rem;
+    margin: 0 auto;
+}
+
+@media(min-width: 40em) {
+    video, article img {
+        max-width: 37.5rem;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem 0;
+        vertical-align: top;
+    }
+
+    .article {
+        max-width: 30%;
+    }
 }
 
 /* Form Styling */
 form {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 0;
+    padding: .5rem;
+    margin: 1rem auto;
+    background-color: #008651;
+    color: #ffff00;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figcaption {
+    background-color: #b6c2bd;
 }
 
 /* Footer */
@@ -113,6 +188,10 @@ footer {
     color: #ffff00;
     background-color: #008651;
     margin-top: 2rem;
+}
+
+footer a {
+    background-color: none;
 }
 
 footer li {
