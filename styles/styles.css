@@ -34,7 +34,8 @@ header {
 
 h1 {
     color: #ffff00;
-    max-width: 50%;
+    font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 header img {
@@ -47,15 +48,15 @@ header img {
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
 nav li {
     list-style: none;
-    padding: 2rem;
+    padding: 1rem;
     color: #004e2f;
     background-color: #ffff00;
+    text-align: center;
 }
 
 .group {
@@ -64,11 +65,22 @@ nav li {
 
 button {
     border: none;
-    padding: .5rem 1rem;
-    color: #004e2f;
-    background-color: #ffff00;
-    margin-right: 1rem;
-    border-radius: 10%;
+    background-color: transparent;
+    margin: 1rem 1rem 0 0;
+}
+
+#header-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+
+#header-menu.toggled {
+    display: block;
+    border: 1px solid #004e2f;
+    padding: 0;
+    margin: 0;
 }
 
 @media(min-width: 40em) {
@@ -80,14 +92,27 @@ button {
 }
 
 /* Main Content */
+.site-wrap {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 video, article img {
-    max-width: 18.75rem;
+    max-width: 15.625rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
 }
 
 /* Footer */
 footer {
     color: #ffff00;
     background-color: #008651;
+    margin-top: 2rem;
 }
 
 footer li {
