@@ -23,7 +23,7 @@
 <!-- Header -->
 <header>
     <div class="header">
-        <a href="index.html">
+        <a href="index.html" class="logo">
             <img src="images/australia-logo.png" alt="Koala hanging off the right side of the black letter a in front of a yellow sun.">
         </a>
         <h1>Australia</h1>
@@ -56,12 +56,12 @@
                     Your browser does not support the video element.
                 </video>
         </article>
-        <article>
+        <article class="container">
             <div class="article">
                 <h2>Local Wildlife</h2>
-                <p>There are over 200,000 species that live in Australia, around half are native to the country. Here are three of my personal favorites. <blockquote>"My message is simple: love and conserve our wildlife."" <cite>Steve Irwin</cite></blockquote></p>
+                <p>There are over 200,000 species that live in Australia, around half are native to the country. Here are three of my personal favorites. <blockquote>"My message is simple: love and conserve our wildlife." <cite>Steve Irwin</cite></blockquote></p>
             </div>
-            <div id="picture">
+            <div class="picture" id="picture">
                 <figure>
                     <img src="images/koala.png" alt="Koala hanging off a tree">
                     <figcaption>
@@ -80,7 +80,9 @@
         </article>
         
         <form action="#" method="post" name="favorite animal">
-            <label for="input">Of the three, which animal is your favorite?</label>
+            <div class="form">
+                <label for="input">Of the three, which animal is your favorite?</label>
+            </div>
             <div class="form">
                 <label for="koala">Koala</label>
                 <input type="radio" name="animal" id="koala">
@@ -95,7 +97,7 @@
             </div>
         </form>
         
-        <article>
+        <article class="container">
             <div class="article">
                 <h2>Major Landmarks</h2>
                 <p>Australia has many well known landmarks scattered throughout the country. Here you will see three of the most famous landmarks.</p>

@@ -1,3 +1,5 @@
+/* Typography */
+
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -14,7 +16,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Navigation */
 a {
     text-decoration: none;
-    padding: 1rem;
+    text-align: center;
+    padding: .25rem;
 }
 
 a, a:visited {
@@ -26,53 +29,21 @@ a:hover, a:active, a:focus {
 }
 
 a:focus {
-    outline: 1px dotted #ffff00;
+    outline: 1px dotted #004e2f;
 }
 
-nav li {
+li {
     list-style: none;
-    border: 1px solid #004e2f;
 }
 
-/* Header */
-header {
-    background-color: #008651;
-}
-
-h1 {
-    color: #ffff00;
-    font-size: 1.5rem;
-    padding-top: 1rem;
-}
-
-header img {
-    max-width: 4rem;
-    max-height: 4rem;
+.group li a {
     padding: 1rem;
-    padding-right: 0;
-    background-color: none;
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-nav li {
-    list-style: none;
-    background-color: #ffff00;
-    text-align: center;
-}
-
-.group {
-    display: none;
 }
 
 button {
+    background: transparent;
     border: none;
-    background-color: transparent;
-    margin: 1rem 1rem 0 0;
+    margin: 2.75rem 1rem 0 0;
 }
 
 #header-menu {
@@ -89,6 +60,7 @@ button {
     margin: 0;
 }
 
+/* End Mobile Navigation */
 @media(min-width: 40em) {
     button {
         display: none;
@@ -96,65 +68,93 @@ button {
 
     #header-menu {
         display: flex;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-        padding-top: 0;
-    }
-
-    .header {
-        display: flex;
-        margin: 0 auto;
-        vertical-align: center;
-    }
-
-    header a img {
-        padding: 0;
+        position: revert;
     }
 
     .group {
+        background-color: #ffff00;
+        padding: 2.4rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 1rem;
-        margin-right: 1rem;
+        gap: 2rem;
+        margin: 0;
+        border: 1px solid #004e2f;
     }
 }
 
-/* Main Content */
+/* Header */
+header, footer {
+    background-color: #008651;
+    left: 0;
+    right: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 6.25rem;
+}
+
+h1 {
+    color: #ffff00;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+@media(min-width: 40em) {
+    .logo img {
+        width: 100%;
+}
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+}
+
+/* Main Area */
 .site-wrap {
-    max-width: 80%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 h2 {
     border-bottom: 1px solid #004e2f;
 }
 
-video, article img {
-    max-width: 15.625rem;
+video, .site-wrap img {
+    width: 17.5rem;
     margin: 0 auto;
 }
 
 @media(min-width: 40em) {
-    video, article img {
-        max-width: 37.5rem;
-    }
-
-    h2 {
-        margin: 0;
+    .site-wrap {
+        width: 80%;
     }
 
     article {
         display: flex;
-        flex-wrap: wrap;
-        margin: 3rem 0;
-        vertical-align: top;
+        padding: 1rem;
+        justify-content: space-evenly;
+        gap: 1rem;
     }
 
     .article {
-        max-width: 30%;
+        width: 37.5rem;
+    }
+
+    video, .site-wrap img {
+        width: 37.5rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 40% 40%;
     }
 }
 
@@ -162,40 +162,30 @@ video, article img {
 form {
     display: flex;
     flex-wrap: wrap;
-    padding: .5rem;
+    padding: 1rem 0 1rem .5rem;
     margin: 1rem auto;
     background-color: #008651;
     color: #ffff00;
+    max-width: 25rem;
 }
 
 .form {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
-figure {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-figcaption {
-    background-color: #b6c2bd;
-}
-
 /* Footer */
-footer {
-    color: #ffff00;
+.footer a {
     background-color: #008651;
+    padding: 0;
+}
+
+footer {
     margin-top: 2rem;
-}
-
-footer a {
-    background-color: none;
-}
-
-footer li {
-    list-style: none;
+    color: #ffff00;
 }
 
 footer ul {
