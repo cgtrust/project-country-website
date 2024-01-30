@@ -236,6 +236,10 @@ figure {
         object-fit: cover;
     }
 
+    .uluru img {
+        height: 100%;
+    }
+
     .tram img {
         height: 100%;
     }
