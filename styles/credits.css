@@ -30,6 +30,14 @@ table {
 }
 
 @media (min-width: 40em) {
+    .container {
+        max-width: 50rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin: 0 auto 8rem auto;
+    }
+
     table {
         display: flex;
         justify-content: center;

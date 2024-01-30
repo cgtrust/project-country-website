@@ -93,6 +93,10 @@ header, footer {
     right: 0;
 }
 
+header {
+    box-shadow: 0px 0px 3px 1px #000;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -123,7 +127,7 @@ h1 {
 
 /* Main Area */
 .site-wrap {
-    max-width: 90%;
+    width: 90%;
     margin: 1rem auto;
 }
 
@@ -146,7 +150,13 @@ video, .site-wrap img {
 }
 
 /* Figure and Figcaption */
-.picture {
+.top-right, 
+.middle-left,
+.middle-right,
+.low-left,
+.low-right,
+.eat,
+.stay {
     display: inline-block;
     text-align: center;
 }
@@ -156,6 +166,17 @@ figure {
     float: left;
     margin: 1rem 0 auto auto;
     border: 1px solid #004e2f;
+}
+
+.eat, .stay {
+    width: 18rem;
+    word-wrap: break-word;
+}
+
+.group a:focus,
+.eat a:focus, 
+.stay a:focus {
+    outline: 1px dotted #004e2f;
 }
 
 @media(min-width: 40em) {
@@ -202,10 +223,31 @@ figure {
 
     .eat, .stay {
         grid-row: 5/6;
+        text-align: left;
+        word-wrap: normal;
+    }
+
+    .eat h3, .stay h3 {
+        margin-left: 1rem;
+    }
+
+    figure img, video {
+        height: 399px;
+        object-fit: cover;
+    }
+
+    .tram img {
+        height: 100%;
+    }
+
+    .stay figcaption {
+        padding-bottom: 4.5rem;
     }
 
     figure {
-        object-fit: cover;
+        width: 599px;
+        margin: 0;
+        padding: 0;
     }
 
     figcaption {
