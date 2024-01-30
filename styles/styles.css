@@ -29,7 +29,7 @@ a:hover, a:active, a:focus {
 }
 
 a:focus {
-    outline: 1px dotted #004e2f;
+    outline: 1px dotted #ffff00;
 }
 
 li {
@@ -44,6 +44,11 @@ button {
     background: transparent;
     border: none;
     margin: 2.75rem 1rem 0 0;
+}
+
+.group {
+    background-color: #ffff00;
+    border: 1px solid #004e2f;
 }
 
 #header-menu {
@@ -72,14 +77,12 @@ button {
     }
 
     .group {
-        background-color: #ffff00;
-        padding: 2.4rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 2rem;
+        padding: 2.4rem;
         margin: 0;
-        border: 1px solid #004e2f;
     }
 }
 
@@ -94,6 +97,7 @@ header, footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
 
 .logo img {
@@ -119,42 +123,117 @@ h1 {
 
 /* Main Area */
 .site-wrap {
-    width: 80%;
-    margin: 2rem auto;
+    max-width: 90%;
+    margin: 1rem auto;
 }
 
 h2 {
     border-bottom: 1px solid #004e2f;
+    padding: 0 1rem;
+}
+
+p {
+    padding: 0 1rem;
 }
 
 video, .site-wrap img {
-    width: 17.5rem;
-    margin: 0 auto;
+    width: 100%;
+}
+
+/* Figure and Figcaption */
+.picture {
+    display: inline-block;
+    text-align: center;
+}
+
+figure {
+    width: 18rem;
+    float: left;
+    margin: 1rem 0 auto auto;
+    border: 1px solid #004e2f;
 }
 
 @media(min-width: 40em) {
     .site-wrap {
-        width: 80%;
+        max-width: 60%;
     }
 
-    article {
-        display: flex;
-        padding: 1rem;
-        justify-content: space-evenly;
+    .container, .places {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
         gap: 1rem;
+        margin: 1rem auto;
+    }
+
+    .places {
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .article {
-        width: 37.5rem;
+        grid-column: 1/3;
+        grid-row: 1/3;
     }
 
-    video, .site-wrap img {
-        width: 37.5rem;
+    video, .tram {
+        grid-column: 3/5;
+        grid-row: 1/3;
     }
 
-    .container {
-        display: grid;
-        grid-template-columns: 40% 40%;
+    figure {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .right {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .roo {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .right-bottom {
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+
+    .article-head {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .top-right {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .middle-left {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .middle-right {
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+
+    .low-left {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .low-right {
+        grid-column: 3/5;
+        grid-row: 3/4;
+    }
+
+    figcaption {
+        align-self: end;
+        padding: 0 .25rem;
     }
 }
 
@@ -178,6 +257,7 @@ form {
 }
 
 /* Footer */
+/* No idea why, but it looks fine on the home page, but messed up on Melbourne and Sydney even though the code is the same. */
 .footer a {
     background-color: #008651;
     padding: 0;
