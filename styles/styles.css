@@ -115,7 +115,7 @@ h1 {
 
 @media(min-width: 40em) {
     .logo img {
-        width: 100%;
+        width: 12.5rem;
 }
 
     h1 {
@@ -245,6 +245,10 @@ figure {
 
     .stay figcaption {
         padding-bottom: 4.5rem;
+    }
+
+    .victoria {
+        padding-bottom: 1.5rem;
     }
 
     figure {

@@ -13,18 +13,21 @@
     <link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#008651">
     <meta name="msapplication-TileColor" content="#008651">
     <meta name="theme-color" content="#008651">
-    <title>Credits</title>
+    <title>Credits<meta name="description" content="Credits page listing resources I used to build this website."></title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/credits.css">
 </head>
 
 <body>
+
+    <a href="#main" class ="screen-reader-text">Skip to Main Content</a>
+
     <!-- Header -->
     <header>
         <div class="header">
             <a href="index.html" class="logo">
-                <img src="images/australia-logo.png" alt="Koala hanging off the right side of the black letter a in front of a yellow sun.">
+                <img src="images/australia-logo.svg" alt="Koala hanging off the right side of the black letter a in front of a yellow sun.">
             </a>
             <h1>Australia</h1>
             <nav class="nav" id="nav">
@@ -42,7 +45,7 @@
     </header>
 
 <!-- Main Content Area -->
-<main>
+<main class="main">
     <div class="container">
         <div class="paragraph">
             <h2>Credits</h2>
@@ -68,6 +71,14 @@
                     <td><a href="https://www.nationsencyclopedia.com/Asia-and-Oceania/Australia-TOPOGRAPHY.html">Nations Encyclopedia</a>
                         <td><a href="https://www.parks.vic.gov.au/places-to-see/parks/albert-park">Parks Victoria</a></td>
                     </tr>
+                    <tr>
+                        <td><a href="https://unsplash.com/">Unsplash</a></td>
+                        <td><a href="https://www.pexels.com/">Pexels</a></td>
+                        <td><a href="https://pixabay.com/">Pixabay</a></td>
+                    </tr>
+                    <tr>
+                        <td  colspan="3"><a href="https://coverr.co/">Coverr</a></td>
+                    </tr>
                 </table>
         </div>
         <div class="form">
@@ -77,7 +88,7 @@
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" placeholder="Name...">
                     <label for="comment">Comment:</label>
-                    <input type="text" name="comment" id="comment" placeholder="Leave a comment...">
+                    <textarea name="comment" id="comment" placeholder="Leave a comment..."></textarea>
                     <input type="submit" value="Submit">
                 </fieldset>
             </form>
