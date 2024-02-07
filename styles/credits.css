@@ -7,8 +7,6 @@ td a:hover, td a:focus {
 }
 
 table {
-    overflow: auto;
-    width: 100%;
     max-width: 18rem;
     display: block;
     margin: 0 auto;
@@ -38,10 +36,7 @@ td, th {
     }
 
     table {
-        display: flex;
-        justify-content: center;
         max-width: 100%;
-        height: fit-content;
     }
 }
 
@@ -68,6 +63,14 @@ input[type="text"] {
     margin: 0 auto;
 }
 
+input[type="text"]:hover, 
+input[type="text"]:focus,
+textarea:hover,
+textarea:focus {
+    border: 1px solid #004e2f;
+    background-color: #ffff00;
+}
+
 fieldset {
     border: none;
 }
@@ -76,15 +79,9 @@ textarea {
     overflow: auto;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-}
-
-footer ul {
-    position: absolute;
-}
-
-.site-wrap {
-    padding-bottom: 4rem;
+.site-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100vh;
 }
