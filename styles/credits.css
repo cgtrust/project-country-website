@@ -57,11 +57,15 @@ form {
     text-align: left;
 }
 
-input[type="text"], textarea {
+input[type="text"], input[type="name"], textarea {
     outline: 0;
     width: 95%;
     padding-top: .5rem;
     margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    margin: 0 auto;
 }
 
 fieldset {
