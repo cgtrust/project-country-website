@@ -154,9 +154,7 @@ video, .site-wrap img {
 .middle-left,
 .middle-right,
 .low-left,
-.low-right,
-.eat,
-.stay {
+.low-right {
     display: inline-block;
     text-align: center;
 }
