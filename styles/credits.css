@@ -9,14 +9,13 @@ td a:hover, td a:focus {
 table {
     overflow: auto;
     width: 100%;
-    max-width: 17.5rem;
-    height: 12.5rem;
+    max-width: 18rem;
     display: block;
     margin: 0 auto;
     border-spacing: 0;
 }
 
-.resources td, .resources th {
+td, th {
     padding: .5rem;
     text-align: center;
     background-color: #008651;
@@ -29,7 +28,7 @@ table {
     text-align: center;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .container {
         max-width: 50rem;
         display: grid;
@@ -53,8 +52,9 @@ h3 {
 }
 
 form {
-    max-width: 17.5rem;
+    max-width: 18rem;
     margin: 1rem auto;
+    text-align: left;
 }
 
 input[type="text"], textarea {
